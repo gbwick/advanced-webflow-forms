@@ -25,10 +25,15 @@ if(document.getElementById("zipcode").value.length != 0) {
         }
         }
 
-        
-        
-
-          
+ if(document.getElementById("Vehicle-Make").value.length != 0) {
+    if (validMake.includes(makeInput.value.toLowerCase()))
+       { alert('Unfortunately, we do not service your vehicle. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
+				document.getElementById('Vehicle-Make').style.borderColor = "red";
+        noMake.style.display = "block";
+        makePopUp.style.display = "flex";
+        return;
+        }
+        }       
           
           
 if(document.getElementById("Highway").value == "Yes") {
