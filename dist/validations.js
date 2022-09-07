@@ -23,7 +23,7 @@ if(document.getElementById("zipcode").value.length != 0) {
 				return;
         }
         };
-        
+
 
 if(document.getElementById("Vehicle-Make").value.length != 0) {
     if (validMake.includes(makeInput.value))
@@ -33,7 +33,7 @@ if(document.getElementById("Vehicle-Make").value.length != 0) {
         makePopUp.style.display = "flex";
 				return;  
         };
-        
+
 
 
 }
