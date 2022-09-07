@@ -10,21 +10,7 @@ let zipcodeInput = document.getElementById("zipcode");
 var notServiced = document.getElementById("not-serviced");
 var zipPopUp = document.getElementById("zip-pop-up");
 
-next.addEventListener("click", function()
-{
 
-if(document.getElementById("zipcode").value.length != 0) {
-    if (validZipcode.includes(zipcodeInput.value))
-        true;
-    else{
-        alert('Unfortunately, it looks like you are outside of our service location. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
-        document.getElementById('zipcode').style.borderColor = "red"; 
-        notServiced.style.display = "block";
-        zipPopUp.style.display = "flex";
-	return;
-        }
-        };
-        });
 
 next.addEventListener("click", function()
 {
@@ -51,3 +37,19 @@ if(document.getElementById("Highway").value == "Yes") {
         }
 
 );
+
+next.addEventListener("click", function()
+{
+
+if(document.getElementById("zipcode").value.length != 0) {
+    if (validZipcode.includes(zipcodeInput.value))
+        true;
+    else{
+        alert('Unfortunately, it looks like you are outside of our service location. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
+        document.getElementById('zipcode').style.borderColor = "red"; 
+        notServiced.style.display = "block";
+        zipPopUp.style.display = "flex";
+	return;
+        }
+        };
+        });
