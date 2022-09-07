@@ -22,6 +22,9 @@ if(document.getElementById("Vehicle-Make").value.length != 0) {
         makePopUp.style.display = "flex";
         return;
         }
+	else{
+	return;
+	}
         } 
 
 
