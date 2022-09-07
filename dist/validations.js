@@ -14,35 +14,6 @@ var zipPopUp = document.getElementById("zip-pop-up");
 
 next.addEventListener("click", function()
 {
-if(document.getElementById("Vehicle-Make").value.length != 0) {
-    if (validMake.includes(makeInput.value.toLowerCase()))
-       { alert('Unfortunately, we do not service your vehicle. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
-	document.getElementById('Vehicle-Make').style.borderColor = "red";
-        noMake.style.display = "block";
-        makePopUp.style.display = "flex";
-        return;
-        }
-	else{
-	return;
-	}
-        } 
-
-
-
-
-        
-if(document.getElementById("Highway").value == "Yes") {
-      alert('Unfortunately, we do not service vehicles on the highway. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
-      document.getElementById('Highway').style.borderColor = "red";
-      onHighway.style.display = "block";
-      highwayPopUp.style.display = "flex";
-        }
-        }
-
-);
-
-next.addEventListener("click", function()
-{
 
 if(document.getElementById("zipcode").value.length != 0) {
     if (validZipcode.includes(zipcodeInput.value))
@@ -55,4 +26,14 @@ if(document.getElementById("zipcode").value.length != 0) {
 	return;
         }
         }
+	
+if(document.getElementById("Highway").value == "Yes") {
+      alert('Unfortunately, we do not service vehicles on the highway. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
+      document.getElementById('Highway').style.borderColor = "red";
+      onHighway.style.display = "block";
+      highwayPopUp.style.display = "flex";
+        }
+        }	
+	
+	
         });
