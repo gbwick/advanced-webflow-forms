@@ -51,5 +51,5 @@ if(document.getElementById("zipcode").value.length != 0) {
         zipPopUp.style.display = "flex";
 	return;
         }
-        };
+        }
         });
