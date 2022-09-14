@@ -6,10 +6,6 @@ let zipcodeInput = document.getElementById("zipcode");
 var notServiced = document.getElementById("not-serviced");
 var zipPopUp = document.getElementById("zip-pop-up");
 
-let validMake = new Array("airstream","allen camper","american coach","american lafrance","amtran","ares","armadillo","aston martin","bentley","bigfoot","blue bird","bollinger","braxton creek","bugatti","casita","champion","chinook","coach house","coachmen","crossroads","cruiser","daimler","drv luxury suites","dutchmen","dynamax","east to west","eclipse","eldorado","entegra coach","enter coach","escape","eveland’s","featherlite","ferrari","fisker karma","fleetwood","forest river","genesis","gillig","grand design","gulf stream","heartland","highland ridge","hino","holiday rambler","intech","international","jayco","kenworth","keystone","keystone company","koenigsegg","k-z","lamborghini","lance camper","lazy daze","leisure travel","libert","lotus","mack","maserati","mclaren","metrovan","midwest automotive design","monaco coach","neoplan","new horizons","newmar","newmar corporation","nexus","northwood","nücamp","oliver travel trailers","optima","outdoors","pacific coachworks","pagani","palomino","panoramic","peterbilt","phoenix usa","pininfarina","pleasure-way","polestar","prime time","regency","renegade","riverside","rolls-royce","roulottes prolite","safari condo","shasta","stallion","starcraft","sterling","sturdibus","the factory","thomas","thor motor coach","tiffin","tiffin motorhomes","travel lite","vac-con","vanleigh","western star","winnebago");
-let makeInput = document.getElementById("Vehicle-Make");
-var noMake = document.getElementById("no-make");
-var makePopUp = document.getElementById("make-pop-up");
 
 
 
@@ -41,16 +37,3 @@ if(document.getElementById("Highway").value == "Yes") {
 
 
 
-next.addEventListener("click", function()
-{
-	
-if(document.getElementById("Vehicle-Make").value.length != 0) {
-    if (validMake.includes(makeInput.value.toLowerCase()))
-       { alert('Unfortunately, we do not service your vehicle. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
-				document.getElementById('Vehicle-Make').style.borderColor = "red";
-        noMake.style.display = "block";
-        makePopUp.style.display = "flex";
-        return;
-        }
-        }	
-        });
