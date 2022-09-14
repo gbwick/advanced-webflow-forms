@@ -19,7 +19,7 @@ if(document.getElementById("zipcode").value.length != 0) {
         alert('Unfortunately, it looks like you are outside of our service location. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
         document.getElementById('zipcode').style.borderColor = "red"; 
         notServiced.style.display = "block";
-        zipPopUp.style.display = "flex";
+        zipPopUp.style.display = "block";
 	return;
         }
         }
@@ -28,7 +28,7 @@ if(document.getElementById("Highway").value == "Yes") {
       alert('Unfortunately, we do not service vehicles on the highway. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
       document.getElementById('Highway').style.borderColor = "red";
       onHighway.style.display = "block";
-      highwayPopUp.style.display = "flex";
+      highwayPopUp.style.display = "block";
         }
         }	
 	
